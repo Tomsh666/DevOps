@@ -1,8 +1,10 @@
 ## 1.
 ```
-[root@dev home]# ifconfig
-enp0s5: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
-inet 188.227.32.87  netmask 255.255.255.0  broadcast 188.227.32.255
+[root@dev ~]# ip route get 1.1.1.1
+1.1.1.1 via 188.227.32.1 dev enp0s5 src 188.227.32.87 uid 0
+    cache
+[root@dev ~]# curl ifconfig.me
+188.227.32.87
 ```
 ## 2.
 ```
